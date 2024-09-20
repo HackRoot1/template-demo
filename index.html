@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- icons -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+        />
+    </head>
+    <body>
+        <header class="h-[70px] bg-blue-600">
+            <nav class="flex justify-between h-full items-center px-4">
+                <div class="flex justify-center items-center gap-3">
+                    <div>
+                        <img src="./images/icc-white-logo.svg" alt="Logo" />
+                    </div>
+                    <ul class="flex gap-3">
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Archive</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Tournaments</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Anouncements</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="text-white hover:text-white/80 px-1 py-1 hover:border-b-2 duration-200 transition-all"
+                                href="#"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex gap-3">
+                    <a
+                        class="bg-red-200 px-3 py-1 rounded-md text-black font-semibold hover:bg-red-300 duration-200 transition-all"
+                        href="#"
+                        >Sign In</a
+                    >
+                    <a
+                        class="bg-red-200 px-3 py-1 rounded-md text-black font-semibold hover:bg-red-300 duration-200 transition-all"
+                        href="#"
+                        >Sign Up</a
+                    >
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            
+            <div
+                id="default-carousel"
+                class="relative w-full"
+                data-carousel="slide"
+            >
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="./images/carousel-1.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="./images/carousel-2.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="./images/carousel-3.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 4 -->
+                    <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="./images/carousel-4.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                        />
+                    </div>
+                    <!-- Item 5 -->
+                    <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item
+                    >
+                        <img
+                            src="./images/carousel-5.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div
+                    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+                >
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 3"
+                        data-carousel-slide-to="2"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 4"
+                        data-carousel-slide-to="3"
+                    ></button>
+                    <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 5"
+                        data-carousel-slide-to="4"
+                    ></button>
+                </div>
+                <!-- Slider controls -->
+                <button
+                    type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 1 1 5l4 4"
+                            />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button
+                    type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m1 9 4-4-4-4"
+                            />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+            
+            <section class="h-[500px]">
+                <div
+                    class="h-full w-full bg-[url('./images/owuigawygwwzwtpydh6f.avif')] bg-cover bg-start bg-no-repeat"
+                    alt="Image"
+                ></div>
+            </section>
+
+
+            <section class="flex gap-2 my-10">
+                <div class="w-1/2 px-3 pt-8 flex flex-col gap-2">
+                    <h2 class="text-2xl font-bold">About Us</h2>
+                    <p class="text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Iusto cum hic consequuntur, et in earum
+                        consequatur ipsam ab dignissimos. Recusandae accusamus
+                        amet temporibus, incidunt dignissimos, id illum velit
+                        aperiam labore in ratione quam quibusdam. Nulla qui
+                        culpa tempora deleniti quas neque eum, eius atque itaque
+                        labore nam mollitia, pariatur nostrum! Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Molestias amet
+                        corporis quis nisi voluptatem, aut officia excepturi
+                        libero nihil dolor at magni labore veritatis quasi
+                        reiciendis deserunt sequi! Magni, id ratione eaque
+                        laudantium eligendi tempora praesentium aliquam dolorum
+                        magnam. Animi eum atque voluptate rem libero recusandae
+                        voluptatibus repellat quisquam sed, deserunt natus
+                        consequatur ad omnis aspernatur suscipit accusamus.
+                        Nobis magnam ex expedita autem facere ipsa fuga deleniti
+                        voluptatem consequuntur. Itaque ea accusantium totam
+                        dignissimos laboriosam mollitia tempora corporis
+                    </p>
+                    <button class="bg-red-300 px-3 py-1 rounded-full self-end">
+                        Read More...
+                    </button>
+                </div>
+                <div class="w-1/2">
+                    <img
+                        class="w-full rounded-md"
+                        src="./images/India-Cricket-WCup-68_1699809986420_1699810043017.avif"
+                        alt="Image"
+                    />
+                </div>
+            </section>
+
+            <section class="flex gap-2">
+                <div class="w-1/2">
+                    <img
+                        class="w-full rounded-md"
+                        src="./images/India-Cricket-WCup-68_1699809986420_1699810043017.avif"
+                        alt="Image"
+                    />
+                </div>
+                <div class="w-1/2 px-3 pt-8 flex flex-col gap-2">
+                    <h2 class="text-2xl font-bold">About Us</h2>
+                    <p class="text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Iusto cum hic consequuntur, et in earum
+                        consequatur ipsam ab dignissimos. Recusandae accusamus
+                        amet temporibus, incidunt dignissimos, id illum velit
+                        aperiam labore in ratione quam quibusdam. Nulla qui
+                        culpa tempora deleniti quas neque eum, eius atque itaque
+                        labore nam mollitia, pariatur nostrum! Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Molestias amet
+                        corporis quis nisi voluptatem, aut officia excepturi
+                        libero nihil dolor at magni labore veritatis quasi
+                        reiciendis deserunt sequi! Magni, id ratione eaque
+                        laudantium eligendi tempora praesentium aliquam dolorum
+                        magnam. Animi eum atque voluptate rem libero recusandae
+                        voluptatibus repellat quisquam sed, deserunt natus
+                        consequatur ad omnis aspernatur suscipit accusamus.
+                        Nobis magnam ex expedita autem facere ipsa fuga deleniti
+                        voluptatem consequuntur. Itaque ea accusantium totam
+                        dignissimos laboriosam mollitia tempora corporis
+                    </p>
+                    <button class="bg-red-300 px-3 py-1 rounded-full self-end">
+                        Read More...
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Design -->
+        <footer class="bg-black text-white">
+            <section
+                class="mx-0 py-16 flex flex-col gap-5 items-center justify-center border-b-2 border-b-slate-600"
+            >
+                <div class="text-3xl text-semibold">
+                    <h1>SPORTS CUP</h1>
+                </div>
+                <div class="flex gap-5">
+                    <a
+                        href="#"
+                        class="bg-slate-900 hover:bg-slate-700 transition-all duration-700 h-[40px] w-[40px] rounded-full flex justify-center items-center text-xl"
+                        ><i class="uil uil-facebook-f"></i
+                    ></a>
+                    <a
+                        href="#"
+                        class="bg-slate-900 hover:bg-slate-700 transition-all duration-700 h-[40px] w-[40px] rounded-full flex justify-center items-center text-xl"
+                        ><i class="uil uil-twitter-alt"></i
+                    ></a>
+                    <a
+                        href="#"
+                        class="bg-slate-900 hover:bg-slate-700 transition-all duration-700 h-[40px] w-[40px] rounded-full flex justify-center items-center text-xl"
+                        ><i class="uil uil-google"></i
+                    ></a>
+                    <a
+                        href="#"
+                        class="bg-slate-900 hover:bg-slate-700 transition-all duration-700 h-[40px] w-[40px] rounded-full flex justify-center items-center text-xl"
+                        ><i class="uil uil-youtube"></i
+                    ></a>
+                </div>
+            </section>
+
+            <section
+                class="mx-20 py-10 grid grid-cols-6 gap-3 border-b-2 border-b-slate-600 text-slate-400"
+            >
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">ORGANIZATION</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">GROUPS</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">GROUPS</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">
+                        INTEREST LINKS
+                    </h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">ORGANIZATION</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-slate-200 text-bold pb-4">GROUPS</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-slate-500" href="#">Link 1</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mx-20 py-5">
+                <div class="text-center">
+                    Copyright 2024 XYZ. All rights reserved.
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
