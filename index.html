@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+        <link rel="stylesheet" href="./src/style.css" />
 
         <!-- icons -->
         <link
@@ -87,18 +89,17 @@
         </header>
 
         <main>
-            
             <div
                 id="default-carousel"
                 class="relative w-full"
                 data-carousel="slide"
             >
                 <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="relative h-56 overflow-hidden md:h-96">
                     <!-- Item 1 -->
                     <div
                         class="duration-700 ease-in-out"
-                        data-carousel-item
+                        data-carousel-item="active"
                     >
                         <img
                             src="./images/carousel-1.svg"
@@ -116,7 +117,7 @@
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             alt="..."
                         />
-                    </div>
+                    </img>
                     <!-- Item 3 -->
                     <div
                         class="duration-700 ease-in-out"
@@ -141,7 +142,7 @@
                     </div>
                     <!-- Item 5 -->
                     <div
-                        class="duration-700 ease-in-out"
+                        class="hidden duration-700 ease-in-out"
                         data-carousel-item
                     >
                         <img
@@ -246,14 +247,12 @@
                 </button>
             </div>
 
-            
-            <section class="h-[500px]">
+            <!-- <section class="h-[500px]">
                 <div
                     class="h-full w-full bg-[url('./images/owuigawygwwzwtpydh6f.avif')] bg-cover bg-start bg-no-repeat"
                     alt="Image"
                 ></div>
-            </section>
-
+            </section> -->
 
             <section class="flex gap-2 my-10">
                 <div class="w-1/2 px-3 pt-8 flex flex-col gap-2">
